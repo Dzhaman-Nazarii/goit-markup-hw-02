@@ -25,6 +25,7 @@ a {
 	font-size: 26px;
 	line-height: 1.192;
 	letter-spacing: 0.03em;
+	color: var(--color-important);
 }
 
 .span {
@@ -36,6 +37,7 @@ a {
 }
 
 .button {
+	font-family: 'Roboto';
 	width: 216px;
 	background: var(--color-addition);
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -141,7 +143,7 @@ a {
 
 .position-person {
 	font-size: 16px;
-	line-height: 19px;
+	line-height: 1.187;
 	letter-spacing: 0.03em;
 	color: var(--color-paragraph);
 }
@@ -157,6 +159,7 @@ a {
 	line-height: 1.192;
 	letter-spacing: 0.03em;
 	color: var(--secondary-color);
+	cursor: auto;
 }
 
 .map-footer {
@@ -164,6 +167,7 @@ a {
 	line-height: 1.714;
 	letter-spacing: 0.03em;
 	color: var(--secondary-color);
+	cursor: auto;
 }
 
 .contact-footer {
@@ -171,4 +175,5 @@ a {
 	line-height: 1.714;
 	letter-spacing: 0.03em;
 	color: rgba(255, 255, 255, 0.6);
+	cursor: auto;
 }
