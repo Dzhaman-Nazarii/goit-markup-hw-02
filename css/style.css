@@ -66,11 +66,7 @@ a {
 	cursor: pointer;
 }
 
-.button:hover {
-	background: var(--color-button-change);
-}
-
-.button:focus {
+.button:hover, .button:focus {
 	background: var(--color-button-change);
 }
 
