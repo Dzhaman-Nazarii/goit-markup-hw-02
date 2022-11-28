@@ -5,15 +5,30 @@
 	--color-important: #000000;
 	--color-addition: #2196F3;
 	--color-button: #F5F4FA;
+	--color-button-change:#188CE8;
 }
 
 body {
-	font-family: 'Roboto';
+	font-family: 'Roboto', sans-serif;
 	color: hsl(0, 0%, 13%);
+	letter-spacing: 0.063em;
 }
 
 a {
 	text-decoration: none;
+}
+
+.visually-hidden {
+	position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
 }
 
 .list {
@@ -52,11 +67,11 @@ a {
 }
 
 .button:hover {
-	background: #188CE8;
+	background: var(--color-button-change);
 }
 
 .button:focus {
-	background: #188CE8;
+	background: var(--color-button-change);
 }
 
 .nav-list {
@@ -68,12 +83,12 @@ a {
 	list-style-type: none;
 }
 
-.nav-list:hover {
+.nav-list:hover, .nav-list:focus {
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 1.142;
 	letter-spacing: 0.02em;
-	color: #2196F3;
+	color: var(--color-addition);
 }
 
 .contact-list {
@@ -122,7 +137,6 @@ a {
 .paragraph-features{
 	font-size: 14px;
 	line-height: 24px;
-	letter-spacing: 0.03em;
 	color: #757575;
 }
 
@@ -134,7 +148,6 @@ a {
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 1.142;
-	letter-spacing: 0.03em;
 	text-transform: uppercase;
 	color: var(--color-hero);
 }
@@ -143,7 +156,6 @@ a {
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 1.166;
-	letter-spacing: 0.03em;
 	color: var(--color-hero);
 }
 
@@ -151,14 +163,12 @@ a {
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.187;
-	letter-spacing: 0.03em;
 	color: var(--color-hero);
 }
 
 .position-person {
 	font-size: 16px;
 	line-height: 1.187;
-	letter-spacing: 0.03em;
 	color: var(--color-paragraph);
 }
 
@@ -171,7 +181,6 @@ a {
 	font-weight: 700;
 	font-size: 26px;
 	line-height: 1.192;
-	letter-spacing: 0.03em;
 	color: var(--secondary-color);
 	cursor: auto;
 }
@@ -179,7 +188,6 @@ a {
 .map-footer {
 	font-size: 14px;
 	line-height: 1.714;
-	letter-spacing: 0.03em;
 	color: var(--secondary-color);
 	cursor: none;
 	font-style: normal;
@@ -192,7 +200,6 @@ a {
 .contact-footer {
 	font-size: 14px;
 	line-height: 1.714;
-	letter-spacing: 0.03em;
 	color: rgba(255, 255, 255, 0.6);
 	cursor: auto;
 	font-style: normal;
@@ -209,7 +216,6 @@ a {
 .subheader-card {
 	font-size: 16px;
 	line-height: 1.875;
-	letter-spacing: 0.03em;
 	color: var(--color-paragraph);
 }
 
@@ -217,11 +223,7 @@ a {
 	color: var(--color-addition);
 }
 
-.btn-all:hover, .btn-all:focus {
-	width: 73px;
-	height: 38px;
-	left: 512px;
-	top: 174px;
+.btn-all:hover, .btn-all:focus,.btn-websites:hover,.btn-websites:focus,.btn-app:hover,.btn-app:focus,.btn-design:hover,.btn-design:focus,.btn-marketing:hover,.btn-marketing:focus {
 	background: var(--color-addition);
 	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 	border-radius: 4px;
