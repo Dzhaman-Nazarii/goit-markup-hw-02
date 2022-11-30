@@ -11,7 +11,6 @@
 body {
 	font-family: 'Roboto', sans-serif;
 	color: hsl(0, 0%, 13%);
-	letter-spacing: 0.063em;
 }
 
 a {
@@ -106,7 +105,7 @@ a {
 	color: var(--color-paragraph);
 }
 
-.contact-link:hover {
+.contact-link:hover, .contact-link:focus {
 	cursor: pointer;
 	color: var(--color-addition);
 }
@@ -134,6 +133,7 @@ a {
 	font-size: 14px;
 	line-height: 24px;
 	color: #757575;
+	letter-spacing: 0.03em;
 }
 
 .our-team {
@@ -146,6 +146,7 @@ a {
 	line-height: 1.142;
 	text-transform: uppercase;
 	color: var(--color-hero);
+	letter-spacing: 0.03em;
 }
 
 .header-section {
@@ -153,6 +154,7 @@ a {
 	font-size: 36px;
 	line-height: 1.166;
 	color: var(--color-hero);
+	letter-spacing: 0.03em;
 }
 
 .header-person {
@@ -160,12 +162,14 @@ a {
 	font-size: 16px;
 	line-height: 1.187;
 	color: var(--color-hero);
+	letter-spacing: 0.03em;
 }
 
 .position-person {
 	font-size: 16px;
 	line-height: 1.187;
 	color: var(--color-paragraph);
+	letter-spacing: 0.03em;
 }
 
 .footer {
@@ -179,6 +183,7 @@ a {
 	line-height: 1.192;
 	color: var(--secondary-color);
 	cursor: auto;
+	letter-spacing: 0.03em;
 }
 
 .map-footer {
@@ -187,6 +192,7 @@ a {
 	color: var(--secondary-color);
 	cursor: none;
 	font-style: normal;
+	letter-spacing: 0.03em;
 }
 
 .map-footer:hover, .contact-footer:hover {
@@ -199,6 +205,7 @@ a {
 	color: rgba(255, 255, 255, 0.6);
 	cursor: auto;
 	font-style: normal;
+	letter-spacing: 0.03em;
 }
 
 .header-card {
@@ -213,55 +220,26 @@ a {
 	font-size: 16px;
 	line-height: 1.875;
 	color: var(--color-paragraph);
+	letter-spacing: 0.03em;
 }
 
 .portfolio-color {
 	color: var(--color-addition);
 }
 
-.btn-all:hover, .btn-all:focus,.btn-websites:hover,.btn-websites:focus,.btn-app:hover,.btn-app:focus,.btn-design:hover,.btn-design:focus,.btn-marketing:hover,.btn-marketing:focus {
-	background: var(--color-addition);
-	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-	border-radius: 4px;
+.menu-btn {
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.625;
+	text-align: center;
 	letter-spacing: 0.03em;
-	color: var(--secondary-color);
+	color: var(--color-hero);
 	cursor: pointer;
 }
 
-.btn-all {
-	width: 73px;
-	height: 38px;
-	left: 512px;
-	top: 174px;
-}
-
-.btn-websites {
-	width: 112px;
-	height: 38px;
-	left: 726px;
-	top: 174px;
-}
-
-.btn-app {
-	width: 103px;
-	height: 38px;
-	left: 846px;
-	top: 174px;
-}
-
-.btn-design {
-	width: 103px;
-	height: 38px;
-	left: 846px;
-	top: 174px;	
-}
-
-.btn-marketing {
-	width: 130px;
-	height: 38px;
-	left: 957px;
-	top: 174px;
+.menu-btn:hover, .menu-btn:focus {
+	color: var(--secondary-color);
+	background: var(--color-addition);
+	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+	border-radius: 4px;
 }
